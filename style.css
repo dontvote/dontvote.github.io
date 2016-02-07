@@ -10,3 +10,11 @@ html, body, .container-table {
     display: table-cell;
     vertical-align: middle;
 }
+
+h1 {
+    display: none;
+}
+
+h1.active {
+    display: block;
+}
