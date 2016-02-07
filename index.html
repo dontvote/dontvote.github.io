@@ -1,5 +1,8 @@
 <html>
 <head>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
     
@@ -15,16 +18,7 @@
     <title>Why I will not vote.</title>
 </head>
 <body>
-    <script>
-    var userLang = navigator.language || navigator.userLanguage;
-
-    if ($('.' + userLang.split('-')[0]).length) {
-        $('h1').removeClass('active');
-        $('.' + userLang.split('-')[0]).addClass('active');
-    }
-    </script>
-
-    <div class="container container-table">
+        <div class="container container-table">
         <div class="row vertical-center-row">
             <div class="text-center col-md-4 col-md-offset-4">
                 <h1 class="en">Just kidding.</h1>
@@ -34,5 +28,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+    var userLang = navigator.language || navigator.userLanguage;
+
+    if ($('.' + userLang.split('-')[0]).length) {
+        $('h1').removeClass('active');
+        $('.' + userLang.split('-')[0]).addClass('active');
+    }
+    </script>
 </body>
 </head>
