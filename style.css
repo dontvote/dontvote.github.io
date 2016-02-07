@@ -11,10 +11,19 @@ html, body, .container-table {
     vertical-align: middle;
 }
 
-h1 {
+.multiLan {
     display: none;
 }
 
-h1.active {
+.multiLan.activeLan {
+    display: inline;
+}
+
+.mainContent {
     display: block;
+    padding-bottom: 2em;
+}
+
+.secondaryContent {
+    padding-bottom: 1em;
 }
